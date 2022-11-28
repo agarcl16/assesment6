@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import com.alexGarcia.app.repository.OportunityRepository;
 
 @Service
-public class OportunityServiceImpl {
+public class OportunityServiceImpl implements OportunityService{
 
 	@Autowired
 	private OportunityRepository oportunityRepository;

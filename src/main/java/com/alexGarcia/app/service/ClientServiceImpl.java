@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import com.alexGarcia.app.repository.ClientRepository;
 
 @Service
-public class ClientServiceImpl {
+public class ClientServiceImpl implements ClientService{
 
 	@Autowired
 	private ClientRepository clientRepository;

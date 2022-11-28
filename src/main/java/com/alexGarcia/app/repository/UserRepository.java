@@ -8,4 +8,6 @@ import com.alexGarcia.app.entity.User;
 @Repository
 public interface UserRepository extends JpaRepository<User, Long>{
 
+	public User findByuserName(String userName);
+
 }

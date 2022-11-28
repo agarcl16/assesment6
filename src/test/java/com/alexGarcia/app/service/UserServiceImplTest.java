@@ -3,10 +3,14 @@ package com.alexGarcia.app.service;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import com.alexGarcia.app.entity.User;
 
 class UserServiceImplTest {
+	
+	@Autowired
+	private UserService userService;
 
 	@Test
 	void testFindAll() {
@@ -36,6 +40,11 @@ class UserServiceImplTest {
 	@Test
 	void testDeleteById() {
 		fail("Not yet implemented");
+	}
+	
+	@Test
+	void logIn() {
+		
 	}
 
 }

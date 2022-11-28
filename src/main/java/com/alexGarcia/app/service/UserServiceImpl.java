@@ -47,4 +47,10 @@ public class UserServiceImpl implements UserService{
 		userRepository.deleteById(id);
 	}
 
+	@Override
+	@Transactional(readOnly = true)
+	public boolean logIn(User user) {
+		return false;
+	}
+
 }
